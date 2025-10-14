@@ -25,7 +25,7 @@ class ShowASRDirective(SphinxDirective):
                     probe_ref = f":obj:`~garak.probes.{probe}`"
                     detector_ref = f":obj:`~garak.detectors.{detector}`"
 
-                    rst += f"\n* {probe_ref}: {100*(1-scores["mu"]):.1f}% with detector {detector_ref}"
+                    rst += f"\n* {probe_ref}: {100*(1-scores['mu']):.1f}% with detector {detector_ref}"
 
         if rst:
             rst = (
